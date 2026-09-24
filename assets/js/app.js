@@ -22,7 +22,7 @@ const todoList = document.getElementById("todoList")
 
 // localStorage.setItem("todoArr", JSON.stringify(todoArr))
 
-let todoArray = JSON.parse(localStorage.getItem("todoArr"))
+let todoArray = JSON.parse(localStorage.getItem("todoArr")) || []
 
 function onread(arr) {
     let result = '';
