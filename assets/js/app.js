@@ -25,7 +25,7 @@ const todoList = document.getElementById("todoList")
 let todoArray = JSON.parse(localStorage.getItem("todoArr"))
 
 function onread(arr) {
-    let result = ''
+    let result = '';
     arr.forEach((ele) => {
         result += `
 
@@ -66,7 +66,6 @@ function oncreate(eve) {
     li.id = obj.id
 
     li.innerHTML = `
-
                    <div class="d-flex justify-content-between align-item-center">
                                 <div>
                                     <strong>${obj.todoItem}</strong>
@@ -149,7 +148,6 @@ function onDelete(ele) {
         })
     }
 }
-
 
 todoForm.addEventListener("submit", oncreate)
 updateTodo.addEventListener("click", onUpdate)
